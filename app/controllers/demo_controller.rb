@@ -1,8 +1,13 @@
-class DemoController < ApplicationController
+# frozen_string_literal: true
 
+class DemoController < ApplicationController
   layout false
 
   def index
+    render('hello')
   end
 
+  def hello
+    render('index')
+  end
 end
